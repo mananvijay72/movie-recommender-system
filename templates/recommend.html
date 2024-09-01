@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recommendations for {{ movie_name }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .movie {
+            text-align: center;
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 150px;
+            margin: 10px;
+        }
+
+        .movie img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .movie-title {
+            padding: 10px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .back-link {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Recommended movies for "{{ movie_name }}"</h1>
+    <div class="container">
+        {% for movie in movies %}
+            <div class="movie">
+                <img src="{{ movie.poster }}" alt="{{ movie.title }}">
+                <div class="movie-title">{{ movie.title }}</div>
+            </div>
+        {% endfor %}
+    </div>
+    <a href="/" class="back-link">Back to home</a>
+</body>
+</html>

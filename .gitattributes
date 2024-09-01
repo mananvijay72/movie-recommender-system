@@ -1,0 +1,5 @@
+cosine_sim.npy filter=lfs diff=lfs merge=lfs -text
+movies.csv filter=lfs diff=lfs merge=lfs -text
+data/movie_data.csv filter=lfs diff=lfs merge=lfs -text
+data/movie_data.csv filter=lfs diff=lfs merge=lfs -text
+data/movies_data.csv filter=lfs diff=lfs merge=lfs -text
