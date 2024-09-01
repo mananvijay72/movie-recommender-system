@@ -9,7 +9,7 @@ The Movie Recommender System is a web application that suggests movies based on 
 - Similarity computation using Cosine Similarity
 - A web application built with Flask and Jinja2 templates for user interaction
 
-![Alt text](images\recommendimage.PNG)
+![Alt text](https://github.com/mananvijay72/movie-recommender-system/blob/main/images/recommendimage.PNG)
 
 ## Project Details
 
