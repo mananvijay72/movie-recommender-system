@@ -30,23 +30,23 @@ The Movie Recommender System is a web application that suggests movies based on 
 
 5. **Dataset:**
    - The dataset used for this project is the TMDb (The Movie Database) dataset. It contains information about 15,000+ movies and includes movie titles, release dates, genres, and overviews.
-    adult: type of move
-    backdrop_path: photo path of backdrop, you can access with https://image.tmdb.org/t/p/w500/{backdrop_path}
-    movie_id : id of movie on tmdb
-    original_language: original language of movie
-    original_title: native title of movie
-    overview : movie plot description
-    popularity:
-    poster_path
-    release_date:
-    title : name of the movie
-    video:
-    vote_average:
-    vote_count:
-    genres : genres of movie
-    keywords : a short phrase attached to a title (e.g. movie / series / episode) that describes it in some way
-    cast : all the casts worked in movie
-    crew : details of all crew who involved in movie
+    - adult: type of move
+    - : photo path of backdrop, you can access with https://image.tmdb.org/t/p/w500/{backdrop_path}
+    - movie_id : id of movie on tmdb
+    -  original_language: original language of movie
+    - original_title: native title of movie
+    - overview : movie plot description
+    - popularity:
+    - poster_path
+    - release_date:
+    - title : name of the movie
+    - video:
+    - vote_average:
+    - vote_count:
+    - genres : genres of movie
+    - keywords : a short phrase attached to a title (e.g. movie / series / episode) that describes it in some way
+    - cast : all the casts worked in movie
+    - crew : details of all crew who involved in movie
     
 ## Installation
  - pip install -r requirements.txt
