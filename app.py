@@ -40,4 +40,4 @@ def recommend():
     return render_template('recommend.html', movie_name=movie_name, movies=recommended_movies)
 
 if __name__ == '__main__':
-    app.run()
+    app.run(host = "0.0.0.0", port = 5000, debug = True)
