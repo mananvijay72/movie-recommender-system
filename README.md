@@ -47,7 +47,12 @@ The Movie Recommender System is a web application that suggests movies based on 
     - keywords : a short phrase attached to a title (e.g. movie / series / episode) that describes it in some way
     - cast : all the casts worked in movie
     - crew : details of all crew who involved in movie
-    
+
+
+6. **Deployment:**
+   - The web application is deployed on AWS EC2 with ECR Docker image.
+   - The CI/CD pipeline is set up and deployed using github action.
+
 ## Installation
  - pip install -r requirements.txt
 
@@ -93,7 +98,7 @@ The Movie Recommender System is a web application that suggests movies based on 
 - `movies.csv`: The dataset containing movie information.
 - `cosine_sim.npy`: Precomputed cosine similarity matrix (saved as a NumPy array).
 
-.
+
 
 ## License
 
