@@ -52,6 +52,11 @@ The Movie Recommender System is a web application that suggests movies based on 
 6. **Deployment:**
    - The web application is deployed on AWS EC2 with ECR Docker image.
    - The CI/CD pipeline is set up and deployed using github action.
+![Alt text](https://github.com/mananvijay72/movie-recommender-system/blob/main/images/cicd.PNG)
+![Alt text](https://github.com/mananvijay72/movie-recommender-system/blob/main/images/ec2.PNG)
+![Alt text](https://github.com/mananvijay72/movie-recommender-system/blob/main/images/ecr.PNG)
+
+
 
 ## Installation
  - pip install -r requirements.txt
@@ -72,10 +77,10 @@ The Movie Recommender System is a web application that suggests movies based on 
     source venv/bin/activate  # On Windows use `venv\Scripts\activate`
     ```
 
-3. **Install the required packages:**
+3. **Docker Image**
 
     ```bash
-    pip install -r requirements.txt
+    docker pull mananvijay/movie:latest
     ```
 
 4. **Run the Flask application:**
